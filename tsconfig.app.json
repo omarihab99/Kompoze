@@ -34,6 +34,6 @@
     "src",
     "vite.config.ts",
     "vitest.config.ts",
-    "setupTests.js"
+    "setupTests.ts"
   ]
 }

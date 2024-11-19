@@ -6,7 +6,7 @@ import React from "react";
  * @param votes - The number of votes for the poll option.
  */
 export type PollOption = {
-  id: number;
+  id: number | string;
   text: string;
   votes: number;
 };
@@ -20,25 +20,10 @@ export type PollOption = {
 export type PollWidgetProps = {
   question: string;
   options: PollOption[];
-  onVote: (option: string) => void;
+  onVote: (option?: string) => void;
   userVote?: string;
 };
-/**
- * PollResultsProps is a type that represents the props for the PollResults component.
- * @param options - The options for the poll.
- */
-export type PollResultsProps = {
-  options: PollOption[];
-};
-/**
- * PollOptionsProps is a type that represents the props for the PollOptions component.
- * @param options - The options for the poll.
- * @param onVote - The function that is called when a vote is made.
- */
-export type PollOptionsProps = {
-  options: PollOption[];
-  onVote: (option: string) => void;
-};
+
 /**
  * The PollWidget component renders a poll with options and handles votes.
  *

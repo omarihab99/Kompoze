@@ -41,8 +41,8 @@ export const PollWithResults: Story = {
         options: [
             { id: 1, text: "Javascript", votes: 2 },
             { id: 2, text: "Typescript", votes: 200 },
-            { id: 2, text: "C++", votes: 100 },
-            { id: 2, text: "Rust", votes: 500 },
+            { id: 3, text: "C++", votes: 100 },
+            { id: 4, text: "Rust", votes: 500 },
 
         ],
         onVote: (option) => console.log(option),

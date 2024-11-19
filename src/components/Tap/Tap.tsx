@@ -1,6 +1,6 @@
 import clsx from "clsx";
 // text porperty can be string, number or object that has toString method.
-type Props<T extends string | number | { toString: () => string }, R> = {
+export type TapProps<T extends string | number | { toString: () => string }, R> = {
   text: T;
   isActive: boolean;
   style?: React.CSSProperties;
@@ -40,7 +40,7 @@ const Tap = <T extends string | number | { toString: () => string }, R>({
   className,
   renderButton,
   actionFn,
-}: Props<T, R>): React.ReactNode => {
+}: TapProps<T, R>): React.ReactNode => {
   if (renderButton) return <>{renderButton({ text, isActive })}</>;
   const defaultClasses = `hover:border-black hover:bg-gray-200 hover:text-black flex items-center w-fit border-black px-2 py-1 rounded-xl ${
     isActive ? "bg-black text-white" : "bg-white text-black"

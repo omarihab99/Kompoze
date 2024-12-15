@@ -55,7 +55,7 @@ export const longMessage: Story = {
   args: {
     notificationType: "Success",
     message:
-      "This is a long message that will be truncated to fit in the notification",
+      "This is a long message that will be not truncated to fit in the notification",
     animation: "FromRight",
     showIcon: true,
   },

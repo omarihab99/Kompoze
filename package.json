@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://github.com/omarihab99/Kompoze",
   "scripts": {
     "dev": "vite",
     "test": "vitest",
@@ -10,7 +11,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "deploy": "gh-pages -d storybook-static"
   },
   "dependencies": {
     "clsx": "^2.1.1",

@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 
-import Post from "./Post";
+import Post from "./index";
 
 const meta: Meta<typeof Post> = {
   component: Post,
@@ -19,6 +19,24 @@ const meta: Meta<typeof Post> = {
     content: {
       control: "text",
     },
+    onSave: {
+      action: "onSave",
+    },
+    onDelete: {
+      action: "onDelete",
+    },
+    onLike: {
+      action: "onLike",
+    },
+    onComment: {
+      action: "onComment",
+    },
+    onShare: {
+      action: "onShare",
+    },
+    onCopy: {
+      action: "onCopy",
+    },
   },
 };
 export default meta;
@@ -32,5 +50,11 @@ export const Default: Story = {
     date: "Tue, 16 Feb 2025",
     content:
       "This is the content of the post that is very long and can be broken into multiple lines that is new lines",
+    onSave: (content: string) => {
+      alert(content);
+    },
+    onDelete: () => {
+      console.log("Delete");
+    },
   },
 };

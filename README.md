@@ -1,4 +1,4 @@
-# Kompoze (under construction)
+# Kompoze (in Development)
 
 ## About
 
